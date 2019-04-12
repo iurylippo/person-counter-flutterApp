@@ -3,7 +3,18 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(MaterialApp(
       title: "Person Counter",
-      home: Stack(
+      home: Home()));
+}
+
+class Home extends StatefulWidget {
+  @override
+  _State createState() => _State();
+}
+
+class _State extends State<Home> {
+  @override
+  Widget build(BuildContext context) {
+    return Stack(
         children: <Widget>[
           Image.asset("images/restaurant.jpg",
               fit: BoxFit.cover, height: 1000.0),
@@ -50,5 +61,6 @@ void main() {
             ],
           )
         ],
-      )));
+      );
+  }
 }
