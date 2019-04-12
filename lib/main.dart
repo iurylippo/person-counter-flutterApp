@@ -35,7 +35,13 @@ void main() {
               ),
             ],
           ),
-          
+          Text(
+            "Pode Entrar!",
+            style: TextStyle(
+                color: Colors.white,
+                fontStyle: FontStyle.italic,
+                fontSize: 30.0),
+          )
         ],
       )));
 }
